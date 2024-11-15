@@ -1,3 +1,4 @@
 close all; clear; clc;
 
-readmatrix("A.csv")
+load patterns.mat
+
