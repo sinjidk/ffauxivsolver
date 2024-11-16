@@ -100,9 +100,19 @@ chances(foxType=='0') = (1-foxProbability);
 chances(foxType~='0') = (foxProbability/4);
 chances = chances/sum(chances);
 
+%% Create metadata
+metadata = strings(size(patterns));
+metadata(patterns == 0) = "x";
+metadata(patterns == 1) = "m";
+metadata(patterns == 2) = repmat(["b1" "b2" "b3" "b4"], 1, length(names));
+verticalSwords = sum(any(patterns == 3, 1), 2) == 2;
+metadata(patterns == 3 & verticalSwords) = repmat(["s1v" "s2v" "s3v" "s4v" "s5v" "s6v"], 1, sum(verticalSwords));
+metadata(patterns == 3 & ~verticalSwords) = repmat(["s1h" "s2h" "s3h" "s4h" "s5h" "s6h"], 1, sum(~verticalSwords));
+metadata(patterns == 4) = "f";
+
 %% Test
 iP = randi(length(names));
 patterns(:, :, iP)
 names(iP)
 
-save patterns patterns names chances
+save patterns patterns names chances metadata
