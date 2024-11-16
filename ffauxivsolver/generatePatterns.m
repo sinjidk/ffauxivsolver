@@ -2,6 +2,8 @@ close all; clear; clc;
 
 % Patterns manually created based on
 % https://docs.google.com/spreadsheets/d/1mUyCzlzDmdXMwaSTUgWXtEA45oJNn-iB4_bVM43zf58/edit?gid=1940464160#gid=1940464160
+foxProbability = 0.19;
+
 %% Import patterns
 A_patterns = readmatrix("A.csv");
 A_names = "A↑" + (1:(size(A_patterns, 1)/6))' + cellfun(@(x) string(char(x)), num2cell('a'+(1:(size(A_patterns, 2)/6))-1));
@@ -92,10 +94,15 @@ names = cat(3, names, regexprep(names, "↑", "→"), regexprep(names, "↑", "�
 %% Alphabetize
 [names, iS] = sort(names);
 patterns = patterns(:, :, iS);
+chances = ones(size(names));
+foxType = cellfun(@(x) x(5), {names{:}});
+chances(foxType=='0') = (1-foxProbability);
+chances(foxType~='0') = (foxProbability/4);
+chances = chances/sum(chances);
 
 %% Test
 iP = randi(length(names));
 patterns(:, :, iP)
 names(iP)
 
-save patterns patterns names
+save patterns patterns names chances
