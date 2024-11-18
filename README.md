@@ -40,4 +40,4 @@ Retell (second board of the week):
 1. Continue revealing white- or black-highlighted tiles and marking the information in the tool until any non-blank tile is found **but do not complete it in-game**.
 2. If the box has not yet been located and at least 4 turns remain, select it in the bottom row and continue revealing black-highlighted tiles and marking the information in the tool until the box is found or less than 4 turns remain.
 3. If the box was found with sufficient turns remaining to complete it then do so and then search for fox with remaining turn (if any), otherwise spend all remaining turns searching for fox.
-4. If you were lucky enough to complete the box and fox with 6 turns remaining
+4. If you were lucky enough to complete the box and fox with sufficient turns remaining to complete the sword then do so, otherwise idk vibe i guess.
