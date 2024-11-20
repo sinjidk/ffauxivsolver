@@ -3,8 +3,8 @@
     <param.appname>ffauxivsolver</param.appname>
     <param.icon />
     <param.icons />
-    <param.version>1.0</param.version>
-    <param.authnamewatermark>Raraputin Susuputin</param.authnamewatermark>
+    <param.version>1.1</param.version>
+    <param.authnamewatermark>Raraputin Susuputin @ Hyperion</param.authnamewatermark>
     <param.email />
     <param.company />
     <param.summary>Faux Hollows Solver for FFXIV.</param.summary>
@@ -45,7 +45,6 @@
     <unset>
       <param.icon />
       <param.icons />
-      <param.version />
       <param.email />
       <param.company />
       <param.screenshot />
