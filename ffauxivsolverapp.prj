@@ -1,9 +1,9 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration build-checksum="2586226909" file="D:\Documents\MATLAB\Faux Solver\ffauxivsolverapp.prj" location="D:\Documents\MATLAB\Faux Solver" name="ffauxivsolverapp" preferred-package-location="D:\Documents\MATLAB\Faux Solver\ffauxivsolverapp\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration build-checksum="846997880" file="D:\Documents\MATLAB\Faux Solver\ffauxivsolverapp.prj" location="D:\Documents\MATLAB\Faux Solver" name="ffauxivsolverapp" preferred-package-location="D:\Documents\MATLAB\Faux Solver\ffauxivsolverapp\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>ffauxivsolver</param.appname>
     <param.icon />
     <param.icons />
-    <param.version>1.11</param.version>
+    <param.version>1.1.2</param.version>
     <param.authnamewatermark>Raraputin Susuputin @ Hyperion</param.authnamewatermark>
     <param.email />
     <param.company />
