@@ -116,8 +116,15 @@ names = cat(3, names+"g", names+"c");
 chances = cat(3, chances*(1-cofferProbability), chances*cofferProbability);
 
 %% Finalize
+numericMetadata = zeros(size(metadata));
+metadataTypes = ["m" "g1" "g2" "g3" "g4" "c1" "c2" "c3" "c4" "s1v" "s2v" "s3v" "s4v" "s5v" "s6v" "s1h" "s2h" "s3h" "s4h" "s5h" "s6h" "f"];
+for iM = 1:length(metadataTypes)
+    numericMetadata(metadata == metadataTypes(iM)) = iM;
+end
+
 [names, iS] = sort(names);
 patterns = patterns(:, :, iS);
+metadata = numericMetadata(:, :, iS);
 chances = chances(iS);
 
 if abs(sum(chances)-1) > 1E-5
