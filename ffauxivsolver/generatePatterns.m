@@ -92,9 +92,7 @@ end
 patterns = cat(3, patterns, rot90(patterns, -1), rot90(patterns, -2), rot90(patterns, -3));
 names = cat(3, names, regexprep(names, "↑", "→"), regexprep(names, "↑", "↓"), regexprep(names, "↑", "←"));
 
-%% Alphabetize
-[names, iS] = sort(names);
-patterns = patterns(:, :, iS);
+%% Set probabilities
 chances = ones(size(names));
 foxType = cellfun(@(x) x(5), {names{:}});
 chances(foxType=='0') = (1-foxProbability);
@@ -118,6 +116,10 @@ names = cat(3, names+"g", names+"c");
 chances = cat(3, chances*(1-cofferProbability), chances*cofferProbability);
 
 %% Finalize
+[names, iS] = sort(names);
+patterns = patterns(:, :, iS);
+chances = chances(iS);
+
 if abs(sum(chances)-1) > 1E-5
     "probabilities do not sum to 1"
 end
