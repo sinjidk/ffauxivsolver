@@ -2,7 +2,8 @@ close all; clear; clc;
 
 % Patterns manually created based on
 % https://docs.google.com/spreadsheets/d/1mUyCzlzDmdXMwaSTUgWXtEA45oJNn-iB4_bVM43zf58/edit?gid=1940464160#gid=1940464160
-foxProbability = 0.19;
+foxProbability = 0.24;
+cofferProbability = 0.4;
 
 %% Import patterns
 A_patterns = readmatrix("A.csv");
@@ -110,9 +111,20 @@ metadata(patterns == 3 & verticalSwords) = repmat(["s1v" "s2v" "s3v" "s4v" "s5v"
 metadata(patterns == 3 & ~verticalSwords) = repmat(["s1h" "s2h" "s3h" "s4h" "s5h" "s6h"], 1, sum(~verticalSwords));
 metadata(patterns == 4) = "f";
 
-%% Test
-iP = randi(length(names));
-patterns(:, :, iP)
-names(iP)
+%% Distinguish boxes
+metadata = cat(3, strrep(metadata, 'b', 'g'), strrep(metadata, 'b', 'c'));
+patterns = repmat(patterns, 1, 1, 2);
+names = cat(3, names+"g", names+"c");
+chances = cat(3, chances*(1-cofferProbability), chances*cofferProbability);
+
+%% Finalize
+if abs(sum(chances)-1) > 1E-5
+    "probabilities do not sum to 1"
+end
 
 save patterns patterns names chances metadata
+
+% %% Test
+% iP = randi(length(names));
+% patterns(:, :, iP)
+% names(iP)
