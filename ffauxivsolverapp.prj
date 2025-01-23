@@ -1,9 +1,9 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration build-checksum="846997880" file="D:\Documents\MATLAB\Faux Solver\ffauxivsolverapp.prj" location="D:\Documents\MATLAB\Faux Solver" name="ffauxivsolverapp" preferred-package-location="D:\Documents\MATLAB\Faux Solver\ffauxivsolverapp\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration build-checksum="248754505" file="D:\Documents\MATLAB\Faux Solver\ffauxivsolverapp.prj" location="D:\Documents\MATLAB\Faux Solver" name="ffauxivsolverapp" preferred-package-location="D:\Documents\MATLAB\Faux Solver\ffauxivsolverapp\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>ffauxivsolver</param.appname>
     <param.icon />
     <param.icons />
-    <param.version>1.1.2</param.version>
+    <param.version>2.0.0</param.version>
     <param.authnamewatermark>Raraputin Susuputin @ Hyperion</param.authnamewatermark>
     <param.email />
     <param.company />
@@ -80,6 +80,30 @@
     <fileset.resources />
     <fileset.package />
     <fileset.depfun>
+      <file>${PROJECT_ROOT}\ffauxivsolver\panels\c1.png</file>
+      <file>${PROJECT_ROOT}\ffauxivsolver\panels\c2.png</file>
+      <file>${PROJECT_ROOT}\ffauxivsolver\panels\c3.png</file>
+      <file>${PROJECT_ROOT}\ffauxivsolver\panels\c4.png</file>
+      <file>${PROJECT_ROOT}\ffauxivsolver\panels\f.png</file>
+      <file>${PROJECT_ROOT}\ffauxivsolver\panels\g1.png</file>
+      <file>${PROJECT_ROOT}\ffauxivsolver\panels\g2.png</file>
+      <file>${PROJECT_ROOT}\ffauxivsolver\panels\g3.png</file>
+      <file>${PROJECT_ROOT}\ffauxivsolver\panels\g4.png</file>
+      <file>${PROJECT_ROOT}\ffauxivsolver\panels\m.png</file>
+      <file>${PROJECT_ROOT}\ffauxivsolver\panels\n.png</file>
+      <file>${PROJECT_ROOT}\ffauxivsolver\panels\s1h.png</file>
+      <file>${PROJECT_ROOT}\ffauxivsolver\panels\s1v.png</file>
+      <file>${PROJECT_ROOT}\ffauxivsolver\panels\s2h.png</file>
+      <file>${PROJECT_ROOT}\ffauxivsolver\panels\s2v.png</file>
+      <file>${PROJECT_ROOT}\ffauxivsolver\panels\s3h.png</file>
+      <file>${PROJECT_ROOT}\ffauxivsolver\panels\s3v.png</file>
+      <file>${PROJECT_ROOT}\ffauxivsolver\panels\s4h.png</file>
+      <file>${PROJECT_ROOT}\ffauxivsolver\panels\s4v.png</file>
+      <file>${PROJECT_ROOT}\ffauxivsolver\panels\s5h.png</file>
+      <file>${PROJECT_ROOT}\ffauxivsolver\panels\s5v.png</file>
+      <file>${PROJECT_ROOT}\ffauxivsolver\panels\s6h.png</file>
+      <file>${PROJECT_ROOT}\ffauxivsolver\panels\s6v.png</file>
+      <file>${PROJECT_ROOT}\ffauxivsolver\panels\x.png</file>
       <file>${PROJECT_ROOT}\ffauxivsolver\patterns.mat</file>
     </fileset.depfun>
     <build-deliverables>

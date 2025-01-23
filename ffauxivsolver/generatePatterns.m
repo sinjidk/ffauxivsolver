@@ -131,7 +131,7 @@ if abs(sum(chances)-1) > 1E-5
     "probabilities do not sum to 1"
 end
 
-save patterns patterns names chances metadata
+save patterns names chances metadata
 
 % %% Test
 % iP = randi(length(names));
