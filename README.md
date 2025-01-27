@@ -10,3 +10,7 @@ __How to Use__
 3. A small number of un-revealed panels should now be highlighted, reveal one on in your in-game board then select the same one in the tool.
 4. If there was only one possible outcome for that panel it will be automatically filled in the tool, otherwise use the lower area of the tool to select which illustration was just revealed on your in-game board.
 5. A new recommendation(s) will be shown in the tool, continue to repeat steps 3 & 4 until the game is finished.
+
+Made by Raraputin Susuputin@Hyperion | @sinjidk.
+
+FFXIV is a registered trademark of Square Enix Holdings Co., Ltd. Panel graphics are screenshots of copyrighted materials © SQUARE ENIX CO., LTD. All rights reserved.
